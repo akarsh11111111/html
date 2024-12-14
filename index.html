@@ -15,7 +15,7 @@
             height: 100vh;
             margin: 0;
             font-family: 'Arial', sans-serif;
-            animation: backgroundFade 10s infinite alternate;
+            animation: backgroundFade 40s infinite alternate;
             position: relative;
             transition: background 1s ease-in-out;
         }
@@ -43,8 +43,11 @@
             z-index: 2;
         }
         @keyframes backgroundFade {
-            0% { filter: brightness(1); }
-            100% { filter: brightness(0.8); }
+            0% { background-image: url('./6.jpeg'); }
+            25% { background-image: url('./7.jpeg'); }
+            50% { background-image: url('./8.jpeg'); }
+            75% { background-image: url('./9.jpeg'); }
+            100% { background-image: url('./6.jpeg'); }
         }
         @keyframes containerFadeIn {
             from { opacity: 0; transform: translateY(-20px); }
